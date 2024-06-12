@@ -128,6 +128,7 @@ function addToCart626(event) {
 
         // get the number of the users entered, default value is 1
         const quantity = parseInt(courseContainer.querySelector('input[type="text"]').value, 10) || 1;
+        const cartContainer = document.querySelector('.cartcontainor');
 
         // Find if the same course item already exists in the cart
         let existingItem = null;
